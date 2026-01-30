@@ -50,6 +50,7 @@ This course focuses on developing the skills required to design and build functi
 ```bash
 ├── 📁 exercise_topic_2/       # html & css exercise (topic 2)
 ├── 📁 lab_activity_2A/        # Lab activity 2A
+├── 📁 lab_activity_2B/        # Lab activity 2B
 ├── 📁 other_projects/         # Experimental project (Vue.js)
 └── 📄 README.md               # Repository documentation
 ```

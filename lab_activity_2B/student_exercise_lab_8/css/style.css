@@ -1,0 +1,30 @@
+/* style.css */
+body {
+font-family: Arial;
+background-color:#97bae8;
+}
+
+h1 {
+color:#187f4d;
+}
+
+img {
+border-radius: 10px;
+}
+
+table {
+border-collapse: collapse;
+width: 80%;
+}
+
+th, td {
+border: 1px solid black;
+padding: 8px;
+text-align: center;
+}
+
+th {
+background-color:#cccccc;
+}
+
+tr:hover {background-color: #2B6CB0;}
