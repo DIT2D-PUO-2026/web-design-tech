@@ -56,6 +56,7 @@ This course focuses on developing the skills required to design and build functi
 ├── 📁 Exercise_Topic_2_Bootstrap/    # Exercise Topic 2 (bootstrap)
 ├── 📁 Practical_Exercise_2/          # Practical Exercise 2
 ├── 📁 Practical_Exercise_3/          # Practical Exercise 3
+├── 📁 urban-brew-cafe/               # Practical Exercise (bootstrap)
 ├── 📄 .gitignore                     # Private File (ignore commit)
 └── 📄 README.md                      # Repository documentation
 ```
