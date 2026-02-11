@@ -1,0 +1,24 @@
+.content { 
+color: blue; 
+font-size: 18px; 
+background-color: #f0f8ff; 
+padding: 10px; 
+}
+
+#mainTitle { 
+background-color: lightgray; 
+padding: 10px; 
+}
+
+p, button { 
+font-family: Arial; 
+margin: 15px; 
+}
+
+button { 
+background-color: orange; 
+padding: 10px 20px; 
+} 
+a { 
+text-decoration: none; 
+} 

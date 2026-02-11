@@ -1,0 +1,56 @@
+.content {
+    color: green;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+#mainHeader {
+    background-color: lightgray;
+    padding: 15px;
+}
+
+.projects li {
+    font-size: 14px;
+    color: darkred;    
+}
+
+li:hover {
+    background-color: lightyellow;
+}
+
+h1:hover {
+    background-color: aqua;
+}
+
+header {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.intro {
+    color: gray;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.content,section,footer,#mainHeader,header { 
+border: 1px solid black; 
+}

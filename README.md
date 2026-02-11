@@ -48,11 +48,16 @@ This course focuses on developing the skills required to design and build functi
 
 ## 📂 Project Structure
 ```bash
-├── 📁 exercise_topic_2/       # html & css exercise (topic 2)
-├── 📁 lab_activity_2A/        # Lab activity 2A
-├── 📁 lab_activity_2B/        # Lab activity 2B
-├── 📁 other_projects/         # Experimental project (Vue.js)
-└── 📄 README.md               # Repository documentation
+├── 📁 exercise_topic_2/              # html & css exercise (topic 2)
+├── 📁 lab_activity_2A/               # Lab activity 2A
+├── 📁 lab_activity_2B/               # Lab activity 2B
+├── 📁 other_projects/                # Experimental project (Vue.js)
+├── 📁 css_practical/                 # Experimental project (Vue.js)
+├── 📁 Exercise_Topic_2_Bootstrap/    # Exercise Topic 2 (bootstrap)
+├── 📁 Practical_Exercise_2/          # Practical Exercise 2
+├── 📁 Practical_Exercise_3/          # Practical Exercise 3
+├── 📄 .gitignore                     # Private File (ignore commit)
+└── 📄 README.md                      # Repository documentation
 ```
 
 ## 👥 Maintainer

@@ -1,0 +1,30 @@
+.about {
+    color: gray;
+    background-color: #f0f8ff;
+    margin: 15px;
+}
+
+.projects {
+    font-size: 16px;
+    color: darkred;
+    li:hover {background-color: lightgrey;}
+}
+
+#mainFooter {
+    color: white;
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+h1:hover { background-color: orange; }
+
+section,footer,#mainHeader,header { 
+border: 2px solid black; 
+}
+
