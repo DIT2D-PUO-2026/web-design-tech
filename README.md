@@ -48,16 +48,27 @@ This course focuses on developing the skills required to design and build functi
 
 ## 📂 Project Structure
 ```bash
-├── 📁 exercise_topic_2/              # html & css exercise (topic 2)
+├── 📁 2.3_Bootstrap_tutorial_2/      # Bootstrap tutorial 2
+├── 📁 2.4_practical_lab_1/           # Practical Lab 1 (topic 2.4)
+├── 📁 2.4_practical_lab_2/           # Practical Lab 2 (topic 2.4)
+├── 📁 3.1_Labtask1/                  # Lab Task 1 - JS Basics
+├── 📁 3.1_Labtask2/                  # Lab Task 2 - JS Basics
+├── 📁 3.2_Practical_Lab_1/           # Practical Lab 1 (topic 3.2)
+├── 📁 3.2_Practical_Lab_2/           # Practical Lab 2 (topic 3.2)
+├── 📁 3.3_Lab_Task_1/               # Lab Task 1 (topic 3.3)
+├── 📁 3.3_Lab_Task_2/               # Lab Task 2 (topic 3.3)
+├── 📁 bootstrap-layout/              # Bootstrap layout exercise
+├── 📁 css_practical/                 # CSS practical exercise
+├── 📁 exercise_topic_2/              # HTML & CSS exercise (topic 2)
+├── 📁 Exercise_Topic_2_Bootstrap/    # Exercise Topic 2 (Bootstrap)
 ├── 📁 lab_activity_2A/               # Lab activity 2A
 ├── 📁 lab_activity_2B/               # Lab activity 2B
-├── 📁 other_projects/                # Experimental project (Vue.js)
-├── 📁 css_practical/                 # Experimental project (Vue.js)
-├── 📁 Exercise_Topic_2_Bootstrap/    # Exercise Topic 2 (bootstrap)
+├── 📁 other_projects/                # Experimental projects (Vue.js)
+├── 📁 PRACTICAL_WORK_1/             # Practical Work 1
 ├── 📁 Practical_Exercise_2/          # Practical Exercise 2
 ├── 📁 Practical_Exercise_3/          # Practical Exercise 3
-├── 📁 urban-brew-cafe/               # Practical Exercise (bootstrap)
-├── 📄 .gitignore                     # Private File (ignore commit)
+├── 📁 urban-brew-cafe/               # Practical Exercise (Bootstrap)
+├── 📄 .gitignore                     # Private file (ignore commit)
 └── 📄 README.md                      # Repository documentation
 ```
 

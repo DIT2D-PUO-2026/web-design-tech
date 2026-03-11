@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Practical Lab 3.2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-placeholder {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Interactive UX with Bootstrap</h2>
+
+            <a tabindex="0" class="btn btn-info text-white" role="button" id="helpBtn" data-bs-toggle="popover"
+                data-bs-trigger="focus" title="How to Use"
+                data-bs-content="Click 'Register' to enter data, or use the carousel controls to view slides.">
+                Help
+            </a>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">User Registration</div>
+            <div class="card-body">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">
+                    Register
+                </button>
+
+                <div id="userDataDisplay" class="mt-3 p-3 bg-light border rounded" style="display: none;">
+                    <h5>Submitted Data:</h5>
+                    <p><strong>Name:</strong> <span id="displayName"></span></p>
+                    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">Dynamic Carousel</div>
+            <div class="card-body">
+                <div id="myCarousel" class="carousel slide mb-3">
+                    <div class="carousel-inner rounded" id="carouselInner"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="btn btn-success me-2" id="startSliderBtn">Start Slider</button>
+        <button class="btn btn-danger" id="stopSliderBtn">Stop Slider</button>
+    </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Register Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameInput" required data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Enter your full name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailInput" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Click to submit your data">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // Tooltips and Popovers
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+
+
+            // Modal with Form Interaction
+            const registerForm = document.getElementById('registerForm');
+
+            registerForm.addEventListener('submit', function (e) {
+                e.preventDefault(); // Prevent page reload
+
+                // Collect user input
+                const nameVal = document.getElementById('nameInput').value;
+                const emailVal = document.getElementById('emailInput').value;
+
+                // Display entered data on the page
+                document.getElementById('displayName').textContent = nameVal;
+                document.getElementById('displayEmail').textContent = emailVal;
+                document.getElementById('userDataDisplay').style.display = 'block';
+
+                // Close modal programmatically
+                const modalElement = document.getElementById('registerModal');
+                const modalInstance = bootstrap.Modal.getInstance(modalElement);
+                modalInstance.hide();
+
+                // Reset form for future entries
+                registerForm.reset();
+            });
+
+
+            // Dynamic Carousel Content
+            const myCarouselElement = document.getElementById('myCarousel');
+            // Initialize carousel without auto-cycling initially, or let it cycle
+            const carousel = new bootstrap.Carousel(myCarouselElement, {
+                interval: 2000,
+                ride: false // Setting to false so it waits for the start button
+            });
+
+            // Control carousel behavior
+            document.getElementById('startSliderBtn').addEventListener('click', function () {
+                carousel.cycle(); // Starts the cycle
+            });
+
+            document.getElementById('stopSliderBtn').addEventListener('click', function () {
+                carousel.pause(); // Stops the cycle
+            });
+
+        });
+
+        const slides = [
+            {
+                title: "First Slide",
+                desc: "This is the first slide of the carousel.",
+                image: "images/image_1.png"
+            },
+            {
+                title: "Second Slide",
+                desc: "This is the second slide of the carousel.",
+                image: "images/image_2.png"
+            },
+            {
+                title: "Third Slide",
+                desc: "This is the third slide of the carousel.",
+                image: "images/image_11.png"
+            }
+        ];
+
+        const carouselInner = document.getElementById("carouselInner");
+        carouselInner.innerHTML = slides.map((slide, i) => `
+  <div class="carousel-item ${i === 0 ? "active" : ""}">
+    <img src="${slide.image}" class="d-block w-100" alt="${slide.title}" style="height:300px; object-fit:cover;">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>${slide.title}</h5>
+      <p>${slide.desc}</p>
+    </div>
+  </div>
+`).join("");
+    </script>
+
+</body>
+
+</html>
