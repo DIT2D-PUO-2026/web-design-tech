@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mobile Web</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Mobile App</h1>
+        </div>
+        <div data-role="content">
+            <h1>Welcome to Mobile Web</h1>
+            <p>This page is optimized for mobile devices.</p>
+            <a href="about.html" data-role="button" class="ui-btn ui-btn-b" data-transition="slide">Go to About Page</a>
+            <a href="#confirmDialog" data-rel="dialog" class="ui-btn ui-corner-all">Open Dialog</a>
+        </div>
+        <div data-role="footer">
+            <h4>Footer Section</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="confirmDialog">
+        <div data-role="header">
+            <h1>Confirmation</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <p>Are you sure you want to continue?</p>
+            <a href="#home" class="ui-btn ui-btn-inline ui-corner-all">Yes</a>
+            <a href="#home" data-rel="back" class="ui-btn ui-btn-inline ui-corner-all">Close</a>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</html>

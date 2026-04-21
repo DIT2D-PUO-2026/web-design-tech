@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial
+scale=1.0">
+    <title>Phone Call</title>
+</head>
+
+<body>
+    <h3>Call Support</h3>
+    <a href="tel:+601158601667" class="btn-call">Call Now</a>
+    <h3>Video Call</h3>
+    <a href="#video" class="btn-call">Start Video Call</a>
+    <h3>Email Us</h3>
+    <a href="mailto:rozlifirdaus9@gmail.com">Send Email</a>
+    <h3>Send SMS</h3>
+    <a href="sms:+601158601667">Send Message</a>
+
+    <video id="video" autoplay></video>
+    <script>
+        navigator.mediaDevices.getUserMedia({
+            video: true,
+            audio: true
+        })
+            .then(function (stream) {
+                document.getElementById("video").srcObject = stream;
+            });
+    </script>
+
+</body>
+
+</html>

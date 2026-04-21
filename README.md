@@ -57,6 +57,11 @@ This course focuses on developing the skills required to design and build functi
 ├── 📁 3.2_Practical_Lab_2/           # Practical Lab 2 (topic 3.2)
 ├── 📁 3.3_Lab_Task_1/               # Lab Task 1 (topic 3.3)
 ├── 📁 3.3_Lab_Task_2/               # Lab Task 2 (topic 3.3)
+├── 📁 3.3_Lab_Task_3/               # Lab Task 3 (topic 3.3)
+├── 📁 4.1_Lab_Sheet_1/              # Lab Sheet 1 (topic 4.1)
+├── 📁 4.1_Lab_Sheet_2/              # Lab Sheet 2 (topic 4.1)
+├── 📁 4.3_Lab_Task_1/               # Lab Task 1 (topic 4.3)
+├── 📁 4.4_Lab_Task_2/               # Lab Task 2 (topic 4.4)
 ├── 📁 bootstrap-layout/              # Bootstrap layout exercise
 ├── 📁 css_practical/                 # CSS practical exercise
 ├── 📁 exercise_topic_2/              # HTML & CSS exercise (topic 2)
@@ -65,6 +70,7 @@ This course focuses on developing the skills required to design and build functi
 ├── 📁 lab_activity_2B/               # Lab activity 2B
 ├── 📁 other_projects/                # Experimental projects (Vue.js)
 ├── 📁 PRACTICAL_WORK_1/             # Practical Work 1
+├── 📁 PRACTICAL_WORK_2/             # Practical Work 2
 ├── 📁 Practical_Exercise_2/          # Practical Exercise 2
 ├── 📁 Practical_Exercise_3/          # Practical Exercise 3
 ├── 📁 urban-brew-cafe/               # Practical Exercise (Bootstrap)
