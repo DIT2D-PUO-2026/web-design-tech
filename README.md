@@ -1,7 +1,7 @@
 # 🌐 Web Design Technology (DFK20013)
 ### Politeknik Ungku Omar | Jabatan Teknologi Maklumat & Komunikasi (JTMK)
 
-![Status](https://img.shields.io/badge/Status-In--Progress-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-End%20of%20life-red?style=for-the-badge)
 ![Class](https://img.shields.io/badge/Class-DIT2D-blue?style=for-the-badge)
 ![Year](https://img.shields.io/badge/SESSION_II-2025%2F2026-brightgreen?style=for-the-badge)
 
